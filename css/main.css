@@ -1398,7 +1398,7 @@ a:hover, a:focus {
     min-width: 400px;
     padding: 30px;
     pointer-events: none;
-    background-color: #000000;
+    background-color: #ffffff;
     opacity: 0;
     -webkit-transition: opacity 0.3s ease;
     transition: opacity 0.3s ease;
@@ -1434,7 +1434,7 @@ a:hover, a:focus {
 }
 
 .navigation__dropdown-item--current a .navigation__dropdown-icon svg {
-  fill: #000000 !important;
+  fill: #ffffff !important;
 }
 
 @media (min-width: 992px) {
@@ -5576,7 +5576,7 @@ a:hover, a:focus {
   font-size: 24px;
   font-weight: 500;
   line-height: 1.3125;
-  color: #000000;
+  color: #ffffff;
 }
 
 @media (min-width: 576px) {
@@ -5602,7 +5602,7 @@ a:hover, a:focus {
 .about-video-section__title--size-small {
   font-size: 24px;
   line-height: 1.5;
-  color: #000000;
+  color: #ffffff;
 }
 
 @media (min-width: 992px) {
@@ -5620,6 +5620,7 @@ a:hover, a:focus {
 
 .about-video-section__text {
   margin-left: 30px;
+  color: #ffffff;
 }
 
 @media (min-width: 1200px) {
@@ -6838,7 +6839,7 @@ a:hover, a:focus {
   font-size: 24px;
   font-weight: 500;
   line-height: 1.3125;
-  color: #000000;
+  color: #ffffff;
 }
 
 @media (min-width: 576px) {
@@ -9745,7 +9746,7 @@ a:hover, a:focus {
 @media (min-width: 992px) {
   .header--leftward .navigation__dropdown-item a {
     font-size: 13px;
-    color: #000000;
+    color: #ffffff;
   }
 }
 
@@ -9987,7 +9988,7 @@ a:hover, a:focus {
 }
 
 .header--yellow.shifted {
-  background-color: #4E516E;
+  background-color: #000000;
 }
 
 .header--yellow .logo svg {
@@ -10073,7 +10074,7 @@ a:hover, a:focus {
 }
 
 .header--yellow .header__panel > .social .social__link:focus svg {
-  fill: #fffe22;
+  fill: transparent;
 }
 
 .header--yellow .header__panel > .social .social__link:focus {
@@ -10087,7 +10088,7 @@ a:hover, a:focus {
 }
 
 .header--yellow .header__menu {
-  background-color: #000000;
+  background-color: transparent;
 }
 
 @media (min-width: 992px) {
