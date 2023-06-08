@@ -552,7 +552,7 @@ a:hover, a:focus {
   font-size: 15px;
   font-weight: 500;
   line-height: 1.2;
-  color: #000000;
+  color: #ffffff;
   text-transform: uppercase;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
@@ -1321,7 +1321,7 @@ a:hover, a:focus {
   position: absolute;
   left: 0;
   width: 100%;
-  border-top: solid 2px #000000;
+  border-top: solid 2px #e96433;
   -webkit-transition: border-top-color 0.3s ease, color 0.3s ease, -webkit-transform 0.3s ease;
   transition: border-top-color 0.3s ease, color 0.3s ease, -webkit-transform 0.3s ease;
   transition: border-top-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
@@ -1345,7 +1345,7 @@ a:hover, a:focus {
 .menu-toggle__line {
   display: block;
   width: 100%;
-  border-top: solid 2px #000000;
+  border-top: solid 2px #e96433;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   -ms-flex-item-align: center;
@@ -1543,7 +1543,7 @@ a:hover, a:focus {
 }
 
 .navigation__item--current .navigation__link-icon svg {
-  fill: #000000;
+  fill: #e96433;
 }
 
 .navigation__link {
@@ -1552,7 +1552,7 @@ a:hover, a:focus {
   padding-right: 22px;
   font-size: 15px;
   line-height: 1.2;
-  color: #000000;
+  color: #ffffff;
   text-transform: uppercase;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
@@ -1622,6 +1622,7 @@ a:hover, a:focus {
   display: block;
   vertical-align: top;
   fill: #e96433;
+  
   transform: rotate(90deg)
 }
 
@@ -1813,7 +1814,7 @@ a:hover, a:focus {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  fill: #000000;
+  fill: #e96433;
 }
 
 .social__link:focus {
@@ -4818,8 +4819,8 @@ a:hover, a:focus {
 
 .creative-hero__title {
   max-width: 280px;
-  margin: 0 0 50px;
-  font-size: 36px;
+  margin: 0 0 40px;
+  font-size: 40px;
   font-weight: 500;
   line-height: 0.95;
   color: #ffffff;
@@ -4832,7 +4833,7 @@ a:hover, a:focus {
     margin-bottom: 56px;
     font-size: 48px;
     font-size: 52px;
-    color: #e96433;
+    color: #ffffff;
   }
 }
 
@@ -9709,7 +9710,8 @@ a:hover, a:focus {
     min-width: 0;
     padding: 20px 0 0 20px;
     pointer-events: auto;
-    background-color: transparent;
+    background-color: transparent
+    ;
     opacity: 1;
     -webkit-transform: translateY(0);
             transform: translateY(0);
@@ -9942,13 +9944,10 @@ a:hover, a:focus {
   .header--leftward .header__logo {
     position: absolute;
     top: 0;
-    left: 0;
+    left: -10;
     margin-right: 0;
     margin-left: 0;
-    -webkit-transform: rotate(-90deg) translateX(-100%) translateY(50%);
-            transform: rotate(-90deg) translateX(-100%) translateY(50%);
-    -webkit-transform-origin: 0 0;
-            transform-origin: 0 0;
+    
   }
 }
 
@@ -9988,7 +9987,7 @@ a:hover, a:focus {
 }
 
 .header--yellow.shifted {
-  background-color: #000000;
+  background-color: #4E516E;
 }
 
 .header--yellow .logo svg {
