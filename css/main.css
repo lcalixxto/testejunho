@@ -723,12 +723,12 @@ a:hover, a:focus {
   }
 }
 
-.arrow-link--theme-yellow .arrow-link__text {
-  color: #e96433;
+.arrow-link--yellow .arrow-link__text {
+  color: #fff;
 }
 
-.arrow-link--theme-yellow .arrow-link__icon svg {
-  fill: #e96433;
+.arrow-link--yellow .arrow-link__icon svg {
+  fill: #544C5F;
 }
 
 .arrow-link__text {
@@ -785,7 +785,7 @@ a:hover, a:focus {
 }
 
 .arrow-link--white .arrow-link__icon svg {
-  fill: #ffffff;
+  fill: #2D93A8;
 }
 
 .play-btn {
