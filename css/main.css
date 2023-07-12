@@ -4840,6 +4840,7 @@ a:hover, a:focus {
     font-size: 48px;
     font-size: 52px;
     color: #ffffff;
+    font-family: "maetl-bold", sans-serif;
   }
 }
 
@@ -4847,12 +4848,14 @@ a:hover, a:focus {
   .creative-hero__title {
     font-size: 80px;
     font-size: calc(0.07692 * 100vw + 7.69231px);
+    font-family: "maetl-bold", sans-serif;
   }
 }
 
 @media (min-width: 576px) and (min-width: 1200px) {
   .creative-hero__title {
     font-size: 100px;
+    font-family: "maetl-bold", sans-serif;
   }
 }
 
@@ -4860,12 +4863,14 @@ a:hover, a:focus {
   .creative-hero__title {
     margin-top: 0;
     font-size: 64px;
+    font-family: "maetl-bold", sans-serif;
   }
 }
 
 @media (min-width: 992px) {
   .creative-hero__title {
     font-size: 84px;
+    font-family: "maetl-bold", sans-serif;
   }
 }
 
@@ -4873,12 +4878,14 @@ a:hover, a:focus {
   .creative-hero__title {
     margin-bottom: 84px;
     font-size: 62px;
+    font-family: "maetl-bold", sans-serif;
   }
 }
 
 @media (min-width: 1200px) {
   .creative-hero__title {
     max-width: 480px;
+    font-family: "maetl-bold", sans-serif;
   }
 }
 
