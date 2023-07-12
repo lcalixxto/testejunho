@@ -942,6 +942,7 @@ a:hover, a:focus {
   display: block;
   width: 100%;
   height: auto;
+  fill:#fff;
   -webkit-animation-name: rotate;
           animation-name: rotate;
   -webkit-animation-duration: 14s;
@@ -4636,7 +4637,7 @@ a:hover, a:focus {
   height: 100vh;
   min-height: 480px;
   padding: 120px 0 45px;
-  background-color: #e96433;
+  background-color: #000000;
 }
 
 @media (min-width: 992px) {
@@ -4648,7 +4649,7 @@ a:hover, a:focus {
 @media (min-width: 1200px) {
   .modern-hero {
     min-height: 960px;
-    padding-top: 200px;
+    padding-top: 50px;
   }
 }
 
@@ -4671,7 +4672,7 @@ a:hover, a:focus {
   font-size: 42px;
   font-weight: 500;
   line-height: 0.94737;
-  color: #000000;
+  color: #ffffff;
   text-transform: uppercase;
       -ms-flex-direction: column;
           flex-direction: column;
@@ -4680,6 +4681,7 @@ a:hover, a:focus {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-box-align: end;
+  font-family: "maetl-bold", sans-serif;
 }
 
 @media (min-width: 320px) {
@@ -4722,8 +4724,8 @@ a:hover, a:focus {
 
 @media (min-width: 1200px) and (min-width: 1200px) {
   .modern-hero__title {
-    font-size: 180px;
-    font-size: calc(0.08194 * 100vw + 51.66667px);
+    font-size: 80px;
+
   }
 }
 
