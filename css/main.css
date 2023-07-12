@@ -5048,7 +5048,7 @@ a:hover, a:focus {
 /* 3.15 Services section in homepage */
 .our-services {
   padding-bottom: 80px;
-  background-color: #f61313;
+  background-color: #000;
 }
 
 @media (min-width: 1200px) {
@@ -10745,9 +10745,9 @@ a:hover, a:focus {
 
 .webpage--bg-white main,
 .webpage--bg-white .leftward-wrapper {
-  background-color: #080808;
-  -webkit-box-shadow: 0 -20px 0 20px #080808;
-          box-shadow: 0 -20px 0 20px #080808;
+  background-color: #000000;
+  -webkit-box-shadow: 0 -20px 0 20px #000000;
+          box-shadow: 0 -20px 0 20px #000000;
 }
 
 .webpage--bg-white .carousel::before {
