@@ -1823,6 +1823,7 @@ a:hover, a:focus {
   fill: #e96433;
 }
 
+
 .social__link:focus {
   outline: none;
 }
@@ -3316,6 +3317,7 @@ a:hover, a:focus {
   padding: 35px 25px;
   text-align: center;
   border: 1px solid #000000;
+  
 }
 
 @media (min-width: 768px) {
@@ -3507,7 +3509,7 @@ a:hover, a:focus {
 }
 
 .card-price--gradient .card-price__wrapper {
-  background: url("../img/gradient.jpg") no-repeat center;
+  background-color: #e96433;
   background-size: cover;
   border: 0;
 }
@@ -7121,6 +7123,11 @@ a:hover, a:focus {
 /* 3.28 Plans section in creative homepage */
 .plans-section .row {
   margin-top: -45px;
+  display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+
 }
 
 @media (min-width: 992px) {
