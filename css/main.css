@@ -6793,13 +6793,13 @@ a:hover, a:focus {
 
 @media (min-width: 768px) {
   .projects-listing__title {
-    font-size: 64px;
+    font-size: 24px;
   }
 }
 
 @media (min-width: 1200px) {
   .projects-listing__title {
-    font-size: 50px;
+    font-size: 20px;
   }
 }
 
@@ -6986,11 +6986,13 @@ a:hover, a:focus {
   margin-right: 14.79167vw;
   overflow: hidden;
   text-align: right;
+  align-items: center;
 }
 
 @media (min-width: 576px) {
   .services-section__image {
     min-height: 0;
+    max-width: 400px;
   }
 }
 
@@ -7002,6 +7004,17 @@ a:hover, a:focus {
   width: auto;
   height: 100%;
   vertical-align: top;
+}
+
+.services-section__image video {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  width: auto;
+  height: 100%;
+  vertical-align: top;
+  align-items: center;
 }
 
 @media (min-width: 576px) {
@@ -10026,6 +10039,7 @@ align-items: center;
   transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
   transition: background-color 0.3s ease, transform 0.3s ease;
   transition: background-color 0.3s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
+
 }
 
 .header--yellow.shifted {
@@ -10238,7 +10252,7 @@ align-items: center;
   width: 85%;
   max-width: 300px;
   padding: 80px 24px 24px;
-  background-color: #ffffff;
+  background-color: #000000;
   -webkit-transition: -webkit-transform 0.3s ease;
   transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
