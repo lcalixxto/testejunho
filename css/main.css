@@ -1820,7 +1820,17 @@ a:hover, a:focus {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  fill: #000000;
+  fill: #e96433;
+}
+
+.social__linkcard svg {
+  display: block;
+  -webkit-transition: fill 0.3s ease;
+  transition: fill 0.3s ease;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  fill: #000;
 }
 
 
@@ -1833,7 +1843,10 @@ a:hover, a:focus {
     outline: none;
   }
   .social__link:hover svg, .social__link:focus svg {
-    fill: #e96433;
+    fill: #ffffff;
+  }
+  .social__linkcard:hover svg, .social__link:focus svg {
+    fill: #ffffff;
   }
 }
 
@@ -6773,7 +6786,7 @@ a:hover, a:focus {
   font-size: 32px;
   font-weight: 500;
   line-height: 0.95;
-  color: #000000;
+  color: #ffffff;
 }
 
 @media (min-width: 768px) {
