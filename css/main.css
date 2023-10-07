@@ -6762,7 +6762,7 @@ a:hover, a:focus {
   display: inline-block;
   font-size: 15px;
   line-height: 1.5;
-  color: #ffffff;
+  color: #ff6200;
   text-transform: uppercase;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
@@ -6787,7 +6787,7 @@ a:hover, a:focus {
   font-size: 32px;
   font-weight: 500;
   line-height: 0.95;
-  color: #ffffff;
+  color: #e96433;
 }
 
 @media (min-width: 768px) {
