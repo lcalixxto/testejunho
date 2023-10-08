@@ -1,8 +1,106 @@
+/* ------------------------------------------------------------------------------
+	Template Name: Centrix
+  Description: Centrix - Personal CV/Resume HTML Template
+  Author: Paul
+  Author URI: http://themeforest.net/user/Paul_tf
+
+1. GLOBAL
+
+	1.1 General
+	1.2  Typography
+	1.3 Utils
+	1.4 Buttons
+	1.5 Fields
+	1.6 Heading
+	1.7 Menu toggle button
+
+2. COMPONENTS
+
+	2.10 Navigation
+	2.11 Logo
+	2.12 Social
+	2.13 Quete block
+	2.14 Comment
+	2.15 Form
+	2.16 Filters block
+	2.17 Feature card
+	2.18 Service preview card
+	2.19 Carousel card
+	2.20 Project preview card in carousel
+	2.21 Project card in listing
+	2.22 Team member card
+	2.23 News card
+	2.24 Price card
+	2.25 Skill block
+	2.26 Block meta for project page
+	2.27 Project other block
+	2.28 Carousel
+	2.29 Accordion
+	2.30 Video block
+	2.31 Statistics block
+	2.32 Section with partners logo
+	2.33 Mobile canvas
+
+3. PAGES SECTIONS
+
+	3.10 Hero section in homepage
+	3.11 Main screen section in homepage
+	3.12 Hero section in modern homepage
+	3.13 Hero section in creative homepage
+	3.14 Features section in homepage
+	3.15 Services section in homepage
+	3.16 Works section in homepage
+	3.17 Contact section in homepage
+	3.18 About section with video in homepage
+	3.19 About section in modern homepage
+	3.20 Section with carousel
+	3.21 Team section only with mobile carousel
+	3.22 Section discuss-project
+	3.23 Tooltip section
+	3.24 Feedback section for starting the project
+	3.25 Projects listing
+	3.26 Portfolio section
+	3.27 Services section
+	3.28 Plans section in creative homepage
+	3.29 First banner block
+	3.30 Grid in team page
+	3.31 Grid in services page
+	3.32 Article
+
+4. PAGES
+
+	4.10 Blog grid layout
+	4.11 Vcard page
+	4.12 Single post page
+	4.13 Comming soon page
+	4.14 404 page
+	4.15 Parallax project page
+	4.16 Cantact page
+	4.17 FAQ page
+	4.18 Service detail page
+	4.19 Pricing page
+	4.20 About us page
+	4.21 Projects carousel page
+	4.22 Single project page
+
+5. COMMON COMPONENTS
+
+	5.1 Header
+	5.2 Footer
+	5.3 Wrapper for header and main content
+	5.4 Overlay
+	5.5 Preloader
+	5.6 Webpage
+
+
+**********************************************/
 @import url("aos.css");
 @import url("swiper-bundle.css");
 @import url("animsition.min.css");
 @import url("jquery.pagepiling.css");
 @import url("jquery.fancybox.css");
+/*** 1. GLOBAL ***/
+/* 1.1 General */
 html,
 body {
   overflow: visible;
@@ -165,6 +263,7 @@ a:hover, a:focus {
   }
 }
 
+/* 1.2  Typography */
 @font-face {
   font-family: "maetl-bold";
   src: url("../fonts/maetl-bold.ttf");
@@ -209,6 +308,7 @@ a:hover, a:focus {
   font-display: swap;
 }
 
+/* 1.3 Utils */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -238,6 +338,7 @@ a:hover, a:focus {
   margin-left: auto;
 }
 
+/* swiper */
 
 .swiper-pagination-bullet {
   width: 8px;
@@ -274,12 +375,14 @@ a:hover, a:focus {
   left: 0;
   width: 100%;
   height: 100%;
+  /* support for plugin https://github.com/bfred-it/object-fit-images */
   font-family: "object-fit: cover;";
   z-index: -1;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
+/* 1.4 Buttons */
 .btn {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -497,6 +600,7 @@ a:hover, a:focus {
   }
 }
 
+/* 1.5 Fields */
 .field {
   position: relative;
   display: block;
@@ -541,7 +645,9 @@ a:hover, a:focus {
   resize: none;
 }
 
+/* 1.6 Heading */
 
+/* 1.7 Menu toggle button */
 .menu-toggle {
   position: relative;
   display: -webkit-box;
@@ -560,6 +666,15 @@ a:hover, a:focus {
   transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  /*&:hover,
+	&:focus {
+		outline: none;
+
+		&::before,
+		&::after {
+			border-top-color: $color-yellow;
+		}
+	}*/
 }
 
 @media (min-width: 992px) {
@@ -627,6 +742,8 @@ a:hover, a:focus {
   }
 }
 
+/*** 2. COMPONENTS ***/
+/* 2.10 Navigation */
 
 .navigation__dropdown {
   display: none;
@@ -852,6 +969,7 @@ a:hover, a:focus {
   opacity: 0.7;
 }
 
+/* 2.11 Logo */
 .logo {
   position: relative;
   display: inline-block;
@@ -886,6 +1004,7 @@ a:hover, a:focus {
   fill: #000000;
 }
 
+/* 2.12 Social */
 .social {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -895,6 +1014,65 @@ a:hover, a:focus {
   list-style: none;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  /*.fb {
+		background-color: #3b5999;
+		border-color: #3b5999;
+		@include transition(all);
+
+		@include media(lg) {
+			&:hover svg {
+				fill: #3b5999;
+			}
+		}
+	}
+
+	.tw {
+		background-color: #55acee;
+		border-color: #55acee;
+		@include transition(all);
+
+		@include media(lg) {
+			&:hover svg {
+				fill: #55acee;
+			}
+		}
+	}
+
+	.g-plus {
+		background-color: #dd4b39;
+		border-color: #dd4b39;
+		@include transition(all);
+
+		@include media(lg) {
+			&:hover svg {
+				fill: #dd4b39;
+			}
+		}
+	}
+
+	.tumblr {
+		background-color: #2b4b6a;
+		border-color: #2b4b6a;
+		@include transition(all);
+
+		@include media(lg) {
+			&:hover svg {
+				fill: #2b4b6a;
+			}
+		}
+	}
+
+	.rss {
+		background-color: #fb7000;
+		border-color: #fb7000;
+		@include transition(all);
+
+		@include media(lg) {
+			&:hover svg {
+				fill: #fb7000;
+			}
+		}
+	}*/
 }
 
 .social--hover-white .social__link:focus {
@@ -963,8 +1141,11 @@ a:hover, a:focus {
   opacity: 0.7;
 }
 
+/* 2.13 Quete block*/
 
+/* 2.14 Comment */
 
+/* 2.15 Form */
 .form {
   padding: 40px 25px 55px;
   background-color: #e96433;
@@ -980,6 +1161,7 @@ a:hover, a:focus {
   margin-bottom: 47px;
 }
 
+/* 2.16 Filters block */
 .filter {
   text-align: center;
 }
@@ -1057,14 +1239,23 @@ a:hover, a:focus {
           transform: scale(1, 1);
 }
 
+/* 2.17 Feature card */
 
+/* 2.18 Service preview card */
 
+/* 2.19 Carousel card */
 
+/* 2.20 Project preview card in carousel */
 
+/* 2.21 Project card in listing */
 
+/* 2.22 Team member card */
 .member-card {
   position: relative;
   overflow: hidden;
+  /*@include media(sm) {
+		display: block;
+	}*/
 }
 
 @media (min-width: 992px) {
@@ -1240,7 +1431,9 @@ a:hover, a:focus {
   }
 }
 
+/* 2.23 News card */
 
+/* 2.24 Price card */
 .card-price__wrapper {
   height: 100%;
   padding: 35px 25px;
@@ -1304,6 +1497,7 @@ a:hover, a:focus {
   border: 0;
 }
 
+/* 2.25 Skill block */
 .skill {
   position: relative;
   padding-bottom: 12px;
@@ -1332,6 +1526,7 @@ a:hover, a:focus {
           transform-origin: 0 50%;
 }
 
+/* 2.26 Block meta for project page*/
 .meta {
   padding: 20px 0;
 }
@@ -1425,6 +1620,7 @@ a:hover, a:focus {
   }
 }
 
+/* 2.27 Project other block */
 .project-other__image {
   width: 100%;
   max-width: 100%;
@@ -1461,6 +1657,7 @@ a:hover, a:focus {
   text-align: justify;
 }
 
+/* 2.28 Carousel */
 .carousel {
   position: relative;
   overflow: visible;
@@ -1489,6 +1686,7 @@ a:hover, a:focus {
   }
 }
 
+/* 2.29 Accordion */
 .accordion__item {
   border-top: solid 1px #ffffff;
 }
@@ -1612,6 +1810,7 @@ a:hover, a:focus {
   }
 }
 
+/* 2.30 Video block */
 .video-block {
   position: relative;
 }
@@ -1623,8 +1822,11 @@ a:hover, a:focus {
   vertical-align: top;
 }
 
+/* 2.31 Statistics block */
 
+/* 2.32 Section with partners logo */
 
+/* 2.33 Mobile canvas */
 .mobile-canvas {
   position: fixed;
   top: 0;
@@ -1736,9 +1938,14 @@ a:hover, a:focus {
   }
 }
 
+/*** 3. PAGES SECTIONS ***/
+/* 3.10 Hero section in homepage */
 
+/* 3.11 Main screen section in homepage */
 
+/* 3.12 Hero section in modern homepage */
 
+/* 3.13 Hero section in creative homepage */
 .creative-hero {
   padding: 100px 0 70px;
 }
@@ -1884,7 +2091,9 @@ a:hover, a:focus {
   vertical-align: top;
 }
 
+/* 3.14 Features section in homepage */
 
+/* 3.15 Services section in homepage */
 .our-services {
   padding-bottom: 80px;
   background-color: #000;
@@ -1936,6 +2145,7 @@ a:hover, a:focus {
   margin-left: auto;
 }
 
+/* 3.16 Works section in homepage */
 .works {
   padding-top: 44px;
   overflow: hidden;
@@ -1954,7 +2164,9 @@ a:hover, a:focus {
   }
 }
 
+/* 3.17 Contact section in homepage */
 
+/* 3.18 About section with video in homepage */
 .about-video-section {
   padding: 80px 0;
 }
@@ -2044,8 +2256,28 @@ a:hover, a:focus {
   }
 }
 
+/* 3.19 About section in modern homepage */
 
+/* 3.20 Section with carousel */
+/*
+.carousel-section--separator::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: calc(100% - 24px);
+  border-bottom: solid 1px #000000;
+}
 
+@media (min-width: 1400px) {
+  .carousel-section--separator::after {
+    width: calc(100% - 30px);
+  }
+} */
+
+/* 3.21 Team section only with mobile carousel */
 .team-section {
   padding: 80px 0;
   overflow: hidden;
@@ -2151,7 +2383,9 @@ a:hover, a:focus {
   }
 }
 
+/* 3.22 Section discuss-project */
 
+/* 3.23 Tooltip section */
 .tooltip {
   padding: 200px 0 120px;
   overflow: hidden;
@@ -2211,7 +2445,9 @@ a:hover, a:focus {
   vertical-align: top;
 }
 
+/* 3.24 Feedback section for starting the project */
 
+/* 3.25 Projects listing */
 
 .projects-listing__container {
   position: relative;
@@ -2339,7 +2575,9 @@ a:hover, a:focus {
   }
 }
 
+/* 3.26 Portfolio section */
 
+/* 3.27 Services section */
 .services-section {
   padding: 40px 0;
   text-align: justify;
@@ -2542,6 +2780,7 @@ a:hover, a:focus {
   }
 }
 
+/* 3.28 Plans section in creative homepage */
 .plans-section .row {
   margin-top: -45px;
   display: flex;
@@ -2581,7 +2820,9 @@ align-items: center;
   }
 }
 
+/* 3.29 First banner block */
 
+/* 3.30 Grid in team page */
 @media (min-width: 992px) {
   .team__row {
     margin-right: -20px;
@@ -2732,7 +2973,9 @@ align-items: center;
   margin: 0;
 }
 
+/* 3.31 Grid in services page */
 
+/* 3.32 Article */
 .article {
   padding: 100px 0;
 }
@@ -2785,7 +3028,10 @@ align-items: center;
   }
 }
 
+/*** 4. PAGES ***/
+/* 4.10 Blog grid layout */
 
+/* 4.11 Vcard page  */
 .vcard {
   position: relative;
   padding: 160px 0 100px;
@@ -2903,14 +3149,18 @@ align-items: center;
   content: "0" counter(list) ". ";
 }
 
+/* 4.12 Single post page */
 
+/* 4.13 Comming soon page */
 .timer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
+/* 4.14 404 page */
 
+/* 4.15 Parallax project page*/
 
 .parallax-projects__nav {
   position: absolute;
@@ -2939,13 +3189,18 @@ align-items: center;
   transition: height 0.3s ease;
 }
 
+/* 4.16 Cantact page*/
 
+/* 4.17 FAQ page*/
 
+/* 4.18 Service detail page */
 
+/* 4.19 Pricing page */
 .pricing {
   overflow: hidden;
 }
 
+/* 4.20 About us page */
 
 .about-us__stat {
   padding-top: 70px;
@@ -2995,7 +3250,9 @@ align-items: center;
   }
 }
 
+/* 4.21 Projects carousel page */
 
+/* 4.22 Single project page*/
 .single-project {
   padding: 60px 0;
 }
@@ -3030,6 +3287,10 @@ align-items: center;
   display: block;
   max-width: 100%;
   height: auto;
+  /*@include media(xxl) {
+					height: auto;
+					object-fit: none;
+				}*/
 }
 
 @media (min-width: 768px) {
@@ -3261,6 +3522,8 @@ align-items: center;
   }
 }
 
+/*** 5. COMMON COMPONENTS ***/
+/* 5.1 Header */
 .header {
   position: relative;
   padding: 20px 0;
@@ -3351,6 +3614,17 @@ align-items: center;
 }
 
 .header--leftward .navigation__dropdown-item {
+  /*&--current {
+						a {
+							color: $color-yellow !important;
+
+							.header__dropdown-icon {
+								svg {
+									fill: $color-yellow !important;
+								}
+							}
+						}
+					}*/
 }
 
 .header--leftward .navigation__dropdown-item:first-child {
@@ -3575,9 +3849,24 @@ align-items: center;
     opacity: 0;
     -webkit-transition: opacity 0.3s ease;
     transition: opacity 0.3s ease;
+    /*&::before {
+					content: "";
+					position: fixed;
+					top: 0;
+					left: 0;
+					z-index: 1;
+					width: 100%;
+					height: 100%;
+					background-color: $color-smoky;
+
+					@include transition(transform);
+				}*/
   }
   .header--leftward.shifted .header__menu {
     opacity: 1;
+    /*&::before {
+						transform: translateX(-100%);
+					}*/
   }
 }
 
@@ -3671,6 +3960,7 @@ align-items: center;
   }
 }
 
+/* 5.2 Footer */
 .footer {
   padding: 40px 0;
   background-color: #e96433;
@@ -3963,6 +4253,7 @@ align-items: center;
   }
 }
 
+/* 5.3 Wrapper for header and main content */
 .leftward-wrapper {
   position: relative;
   background-color: #f7f7f7;
@@ -3999,6 +4290,7 @@ align-items: center;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
+/* 5.4 Overlay */
 .overlay {
   position: fixed;
   top: 0;
@@ -4012,6 +4304,7 @@ align-items: center;
   z-index: 999;
 }
 
+/* 5.5 Preloader */
 .preloader {
   position: fixed;
   top: 0;
@@ -4079,6 +4372,7 @@ align-items: center;
   }
 }
 
+/* 5.6 Webpage */
 .webpage .animsition {
   display: -webkit-box;
   display: -ms-flexbox;
