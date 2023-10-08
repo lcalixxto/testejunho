@@ -3916,6 +3916,7 @@ a:hover, a:focus {
   font-size: 15px;
   line-height: 1.5;
   color: #ffffff;
+  text-align: justify;
 }
 
 @media (min-width: 1200px) {
